@@ -1,10 +1,10 @@
 const { Router } = require("express");
-const { routerTask } = require("./routerTask.js");
+const { taskRouter } = require("./taskRouter.js");
 
 const router = Router();
 
-router.use("/task", routerTask);
+router.use("/task", taskRouter);
 
 module.exports = {
     router
-}
+};
